@@ -1,0 +1,13 @@
+  <div id = "about">
+    <ul class="list-inline text-center">
+    <div class = "title">
+      <h3>This template is made with <i class="fa fa-heart"></i> by</h3>
+    </div>
+    <% ["kriscard", "lmamlouk"].each do |gh_username| %>
+    <li>
+     <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+     <p><%= gh_username.capitalize %></p>
+   </li>
+   <% end %>
+ </ul>
+  </div>
